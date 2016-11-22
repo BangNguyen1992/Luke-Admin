@@ -1,0 +1,19 @@
+{
+  "name": "luke-admin",
+  "version": "1.0.0",
+  "description": "The administration panel for Luke App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BangNguyen1992/Luke-Admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BangNguyen1992/Luke-Admin/issues"
+  },
+  "homepage": "https://github.com/BangNguyen1992/Luke-Admin#readme"
+}
