@@ -1,0 +1,4 @@
+.DS_Store
+auth0-variables.js
+node_modules
+npm-debug.log
