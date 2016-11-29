@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/BangNguyen1992/Luke-Admin/issues"
   },
-  "homepage": "https://github.com/BangNguyen1992/Luke-Admin#readme"
+  "homepage": "https://github.com/BangNguyen1992/Luke-Admin#readme",
+  "dependencies": {
+    "bootstrap-social": "^5.1.1",
+    "datatables": "^1.10.12",
+    "datatables-responsive": "^1.0.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "metismenu": "^2.5.2"
+  }
 }
