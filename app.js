@@ -1,8 +1,8 @@
 (function($){
-
-
 $(document).ready(function () {
-var table = document.getElementById("list-tab1e");
+var table = document.getElementById("list-tab1e")
+var reportDetail = document.getElementById("report")
+console.log(reportDetail);
 var clientID = "";
 var domain = "";
 	$.getJSON("http://www.balticapp.fi/lukeA/authzero", function (result) {
@@ -99,7 +99,47 @@ var domain = "";
 
 $(document).ready(function() {
 finda11()
+findreports()
+
 });
+
+var findreports = function (id) {httpGetAsync('http://www.balticapp.fi/lukeA/report',
+	 function (data) {
+	 console.log(data);
+   var reports = eval(data);
+	 var imgrows = '';
+	//  var imgTitle= ''
+	//  var imgDesc =''
+	var src = 'homi.jpg'
+	 reports.forEach(function(report){
+      var img = document.createElement('li');
+	// 	 var htag = document.createElement('h3');
+	// 	 var ptag = document.createElement('p');
+	 	 img.dataset.id = report.id
+		 img.innerHTML = `
+		 <img src=${src} />
+		<h3>${report.approved}</h3>
+		<p>${report.description}</p>
+
+		 `
+		 imgrows += img;
+		 reportDetail.appendChild(img)
+	// 	 //var src = report.image_url
+	// 	 var title = report.approved
+	// 	 var desc = report.description
+	// 	 img.src = 'homi.jpg';
+	// 	 imgrows += img
+	// 	 reportDetail.appendChild(img)
+	// 	 imgTitle += htag
+	// 	 reportDetail.appendChild(htag)
+	// 	 imgDesc+=desc
+	// 	 reportDetail.appendChild(desc)
+//
+//
+	 })
+
+ })
+}
 var finda11 = function () {httpGetAsync('http://www.balticapp.fi/lukeA/user/get-all',
 
 function (data) {
